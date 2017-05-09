@@ -113,3 +113,37 @@
     left: 458px;
     top: 195px;
 }
+
+.footnote {
+    margin-top: 30px;
+    background: white;
+    box-shadow: 2px 2px 10px rgba(20%, 20%, 20%, 0.2);
+    border-radius: 2px;
+    position: absolute;
+    top: 920px;
+    width: 436px;
+    height: 30px;
+    margin: 25px;
+    text-align: center;
+    vertical-align: auto;
+}
+
+a:link {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+a:active {
+    color: white;
+    text-decoration: underline;
+}
+
+a:after {
+    color: black;
+    text-decoration: none;
+}
