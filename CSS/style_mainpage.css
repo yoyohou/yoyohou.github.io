@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+    font-family: 'PingFangTC-Thin', 'Microsoft JhengHei', 'Roboto', sans-serif;
+}
+
+body {
+    background-color: white;
+}
+
+A:link {
+    color: white;
+    text-decoration: none;
+}
+
+A:visited {
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+}
+
+A:active {
+    color: white;
+    text-decoration: none;
+}
+
+A:hover {
+    color: white;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 30px;
+    color: rgba(0, 100, 180, 1);
+    padding: 10px;
+    padding-bottom: 25px;
+    box-shadow: 0 5px 9px rgba(0, 0, 0, 0.16);
+}
+
+.button {
+    Color: white;
+    text-align: center;
+    width: 2px solid black;
+    float: left;
+    background-color: rgba(0, 100, 180, 1);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.24);
+    margin: 5px;
+    padding: 5px;
+}
+
+.button:hover {
+    background-color: rgba(0, 50, 90, 1);
+}
