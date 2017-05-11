@@ -68,7 +68,6 @@ a:active {
         /*border: 1px solid rgba(255, 0, 0, 0.5);*/
         color: rgb(180, 180, 180);
         font-size: 1.8em;
-        margin-top: 10px;
         display: inline-block;
         font-weight: 200;
     }
@@ -127,9 +126,9 @@ a:active {
         background-color: rgba(255, 255, 255, 0.5);
     }
     /******   主要內容左右欄   ******/
-    .Homepage {
+    .TwoColumn {
         /*border: 1px solid rgba(0, 255, 0, 0.5);*/
-        margin: 0px;
+        margin: 0px 0px;
         padding: 20px 10px 20px 0px;
         width: 49.5%;
         display: inline-block;
@@ -260,10 +259,10 @@ a:active {
         background-color: rgba(255, 255, 255, 0.5);
     }
     /******   主要內容左右欄   ******/
-    .Homepage {
+    .TwoColumn {
         /*border: 1px solid rgba(0, 255, 0, 0.5);*/
         margin: 0px;
-        padding: 30px 0px 0px 0px;
+        padding: 10px 0px 0px 0px;
         width: 100%;
         display: inline-block;
         vertical-align: top;
