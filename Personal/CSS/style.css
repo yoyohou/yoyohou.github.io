@@ -1,5 +1,345 @@
 * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
-    font-family: "source-han-sans-traditional", sans-serif;
-    /*font-family: 'Roboto', 'PingFangTC-Thin', 'Microsoft JhengHei', sans-serif;*/
+    font-family: 'PingFangTC', 'Microsoft JhengHei', sans-serif;
 }
+
+
+/******   超連結   ******/
+
+a:link {
+    color: rgb(60, 60, 60);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+a:visited {
+    color: rgb(60, 60, 60);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(60, 60, 60);
+    font-weight: 600;
+    text-decoration: underline dotted rgba(120, 120, 120, 0.3);
+}
+
+a:active {
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+
+/******   網頁大型時候 (桌電)   ******/
+
+@media screen and (min-width:960px) {
+    /******   頁面主架構   ******/
+    body {
+        /*border: 1px solid rgba(255, 0, 0, 0.5);*/
+        background-color: rgb(245, 245, 245);
+    }
+    .Container {
+        /*border: 3px solid rgba(255, 0, 0, 0.5);*/
+        max-width: 960px;
+        width: 80%;
+        margin: 0px auto;
+    }
+    /******   網頁頭   ******/
+    header {
+        /*border: 0px solid rgba(0, 0, 255, 0.5);*/
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        height: 70px;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.90);
+        padding-top: 0px;
+        margin: 0px;
+        box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.05), 0 0 2px 0px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        z-index: 5;
+    }
+    .NameTitle {
+        /*border: 1px solid rgba(255, 0, 0, 0.5);*/
+        color: rgb(180, 180, 180);
+        font-size: 1.8em;
+        margin-top: 10px;
+        display: inline-block;
+        font-weight: 200;
+    }
+    /******   導覽列相關   ******/
+    nav {
+        /*border: 1px solid rgba(0, 0, 255, 0.5);*/
+        float: right;
+        margin-top: 15px;
+        padding: 0px;
+    }
+    nav>ul {
+        /*border: 1px solid rgba(255, 0, 0, 0.5);*/
+        list-style-position: inside;
+    }
+    nav .NavBtn {
+        /*border: 1px solid rgba(0, 255, 0, 0.5);*/
+        font-size: 1.2em;
+        text-decoration: none;
+        display: inline-block;
+        padding: 2px 5px 2px 5px;
+        margin: 0px 10px 0px 0px;
+        height: 100%;
+    }
+    nav .NavBtn:hover:not(.Current) {
+        color: rgb(255, 255, 255);
+        background-color: rgba(60, 60, 60, 0.5);
+        text-decoration: none;
+    }
+    nav .Current {
+        color: rgb(255, 255, 255);
+        background-color: rgba(60, 60, 60, 1);
+        text-decoration: none;
+    }
+    /******   玄關視覺概念圖   ******/
+    .Genkan {
+        width: 100%;
+        height: 600px;
+        background-image: url(../image/Cover_S.jpg);
+        background-size: cover;
+        background-position: right bottom;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .TitleBlock {
+        /*border: 1px solid rgba(0, 255, 0, 0.5);*/
+        margin: 0px 0px;
+        padding: 0px 60px 0px 0px;
+        color: rgb(255, 255, 255);
+        font-size: 5em;
+        font-weight: 600;
+        display: inline-block;
+    }
+    .TitleBlock:first-of-type {
+        position: relative;
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+    /******   主要內容左右欄   ******/
+    .Homepage {
+        /*border: 1px solid rgba(0, 255, 0, 0.5);*/
+        margin: 0px;
+        padding: 20px 10px 20px 0px;
+        width: 49.5%;
+        display: inline-block;
+        vertical-align: top;
+    }
+    /******   主要內容便利貼格式   ******/
+    .PostItTitle {
+        font-size: 2.8em;
+        line-height: 1.2;
+        font-weight: 200;
+        color: rgb(180, 180, 180);
+        display: block;
+        padding: 0px 0px 15px 0px;
+    }
+    .PostItWhite {
+        /*border: 1px solid rgba(0, 255, 0, 0.5);*/
+        color: rgb(60, 60, 60);
+        line-height: 1.5;
+        background-color: white;
+        width: 100%;
+        display: inline-block;
+        padding: 20px;
+        margin: 0px 0px 15px 0px;
+        box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.05), 0 0 1px 0px rgba(0, 0, 0, 0.1);
+    }
+    .PostItBlack {
+        /*border: 1px solid rgba(0, 255, 0, 0.5);*/
+        color: white;
+        background-color: rgb(60, 60, 60);
+        width: 100%;
+        display: inline-block;
+        padding: 20px;
+        margin: 0px 0px 15px 0px;
+        box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.05), 0 0 1px 0px rgba(0, 0, 0, 0.1);
+    }
+}
+
+
+/******   網頁小型時候 (手機平板)   ******/
+
+@media screen and (max-width:959px) {
+    /******   頁面主架構   ******/
+    body {
+        /*border: 1px solid rgba(255, 0, 0, 0.5);*/
+        background-color: rgb(245, 245, 245);
+    }
+    .Container {
+        /*border: 3px solid rgba(255, 0, 0, 0.5);*/
+        max-width: 960px;
+        width: 90%;
+        margin: 0px auto;
+    }
+    /******   網頁頭   ******/
+    header {
+        /*border: 0px solid rgba(0, 0, 255, 0.5);*/
+        position: static;
+        top: 0px;
+        right: 0px;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.90);
+        padding-top: 0px;
+        margin: 0px;
+        box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.05), 0 0 2px 0px rgba(0, 0, 0, 0.1);
+        overflow: auto;
+        z-index: 5;
+    }
+    .NameTitle {
+        /*border: 1px solid rgba(255, 0, 0, 0.5);*/
+        color: rgb(180, 180, 180);
+        font-size: 1.8em;
+        margin-top: 10px;
+        display: block;
+        font-weight: 200;
+    }
+    /******   導覽列相關   ******/
+    nav {
+        /*border: 1px solid rgba(0, 0, 255, 0.5);*/
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 0px;
+    }
+    nav>ul {
+        /*border: 1px solid rgba(255, 0, 0, 0.5);*/
+        list-style-position: inside;
+    }
+    nav .NavBtn {
+        /*border: 1px solid rgba(0, 255, 0, 0.5);*/
+        font-size: 1.2em;
+        text-decoration: none;
+        display: inline-block;
+        padding: 2px 5px 2px 5px;
+        margin: 0px 10px 0px 0px;
+        height: 100%;
+    }
+    nav .NavBtn:hover:not(.Current) {
+        color: rgb(255, 255, 255);
+        background-color: rgba(60, 60, 60, 0.5);
+        text-decoration: none;
+    }
+    nav .Current {
+        color: rgb(255, 255, 255);
+        background-color: rgba(60, 60, 60, 1);
+        text-decoration: none;
+    }
+    /******   玄關視覺概念圖   ******/
+    .Genkan {
+        width: 100%;
+        height: 600px;
+        background-image: url(../image/Cover_S.jpg);
+        background-size: cover;
+        background-position: right bottom;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .TitleBlock {
+        /*border: 1px solid rgba(0, 255, 0, 0.5);*/
+        margin: 0px 0px;
+        padding: 0px 60px 0px 0px;
+        color: rgb(255, 255, 255);
+        font-size: 3em;
+        font-weight: 600;
+        display: inline-block;
+    }
+    .TitleBlock:first-of-type {
+        position: relative;
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+    /******   主要內容左右欄   ******/
+    .Homepage {
+        /*border: 1px solid rgba(0, 255, 0, 0.5);*/
+        margin: 0px;
+        padding: 30px 0px 0px 0px;
+        width: 100%;
+        display: inline-block;
+        vertical-align: top;
+    }
+    /******   主要內容便利貼格式   ******/
+    .PostItTitle {
+        font-size: 2em;
+        line-height: 1.2;
+        font-weight: 200;
+        color: rgb(180, 180, 180);
+        display: block;
+        padding: 0px 0px 15px 0px;
+    }
+    .PostItWhite {
+        /*border: 1px solid rgba(0, 255, 0, 0.5);*/
+        color: rgb(60, 60, 60);
+        line-height: 1.5;
+        background-color: white;
+        width: 100%;
+        display: inline-block;
+        padding: 10px;
+        margin: 0px 0px 10px 0px;
+        box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.05), 0 0 1px 0px rgba(0, 0, 0, 0.1);
+    }
+    .PostItBlack {
+        /*border: 1px solid rgba(0, 255, 0, 0.5);*/
+        color: white;
+        background-color: rgb(60, 60, 60);
+        width: 100%;
+        display: inline-block;
+        padding: 10px;
+        margin: 0px 0px 10px 0px;
+        box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.05), 0 0 1px 0px rgba(0, 0, 0, 0.1);
+    }
+}
+
+
+/******   網頁末尾   ******/
+
+footer {
+    width: 100%;
+    height: 40px;
+    font-size: 0.8em;
+    color: rgb(180, 180, 180);
+    background-color: rgb(60, 60, 60);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.05), 0 0 2px 0px rgba(0, 0, 0, 0.1);
+    z-index: 5;
+}
+
+
+/******   雜項控制   ******/
+
+.W200 {
+    font-weight: 200;
+}
+
+.W400 {
+    font-weight: 400;
+}
+
+.W600 {
+    font-weight: 600;
+}
+
+.Emphasize {
+    color: rgb(60, 60, 60);
+    font-weight: 800;
+}
+
+
+/******   暫存  ******/
+
+
+/*div .Placeholder {
+    height: 120px;
+}*/
