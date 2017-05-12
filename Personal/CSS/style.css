@@ -35,7 +35,7 @@ a:active {
 
 /******   網頁大型時候 (桌電)   ******/
 
-@media screen and (min-width:960px) {
+@media screen and (min-width:1000px) {
     /******   頁面主架構   ******/
     body {
         /*border: 1px solid rgba(255, 0, 0, 0.5);*/
@@ -61,23 +61,27 @@ a:active {
         padding-top: 0px;
         margin: 0px;
         box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.05), 0 0 2px 0px rgba(0, 0, 0, 0.1);
-        display: flex;
+        /*display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: center;*/
         z-index: 5;
     }
     .NameTitle {
         /*border: 1px solid rgba(255, 0, 0, 0.5);*/
         color: rgb(180, 180, 180);
         font-size: 1.8em;
-        display: inline-block;
+        float: left;
+        display: block;
+        margin-top: 15px;
         font-weight: 200;
     }
     /******   導覽列相關   ******/
     nav {
         /*border: 1px solid rgba(0, 0, 255, 0.5);*/
         float: right;
-        margin-top: 15px;
+        display: block;
+        margin-top: 20px;
+        margin-bottom: 0px;
         padding: 0px;
     }
     nav>ul {
@@ -104,12 +108,40 @@ a:active {
         text-decoration: none;
     }
     /******   玄關視覺概念圖   ******/
-    .Genkan {
+    .Genkan-Home {
         width: 100%;
         height: 600px;
         background-image: url(../image/Cover_S.jpg);
         background-size: cover;
         background-position: right bottom;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .Genkan-Publications {
+        width: 100%;
+        height: 600px;
+        background-image: url(../image/Publications_S.jpg);
+        background-size: cover;
+        background-position: right bottom;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .Genkan-Projects {
+        width: 100%;
+        height: 600px;
+        background-image: url(../image/Projects_S.jpg);
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .Genkan-Misc {
+        width: 100%;
+        height: 600px;
+        background-image: url(../image/Misc_S.jpg);
+        background-size: cover;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -127,6 +159,15 @@ a:active {
         position: relative;
         background-color: rgba(255, 255, 255, 0.5);
     }
+    /******   主要內容單欄   ******/
+    .OneColumn {
+        /*border: 1px solid rgba(0, 255, 0, 0.5);*/
+        margin: 0px 0px;
+        padding: 20px 0px 20px 0px;
+        width: 100%;
+        display: inline-block;
+        vertical-align: top;
+    }
     /******   主要內容左右欄   ******/
     .TwoColumn {
         /*border: 1px solid rgba(0, 255, 0, 0.5);*/
@@ -136,6 +177,40 @@ a:active {
         display: inline-block;
         vertical-align: top;
     }
+    /******   專案內容便利貼格式   ******/
+    /*.PostItTitle {
+        font-size: 2.8em;
+        line-height: 1.2;
+        font-weight: 200;
+        color: rgb(180, 180, 180);
+        display: block;
+        padding: 15px 0px 15px 0px;
+    }
+    .PostItTitle:first-child {
+        padding: 0px 0px 15px 0px;
+    }*/
+    .ProjectUnitWhite {
+        /*border: 1px solid rgba(0, 255, 0, 0.5);*/
+        color: rgb(60, 60, 60);
+        line-height: 1.8;
+        background-color: white;
+        width: 49.5%;
+        display: inline-block;
+        padding: 20px;
+        margin: 0px 0px 15px 0px;
+        box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.05), 0 0 1px 0px rgba(0, 0, 0, 0.1);
+    }
+    .ProjectUnitBlack {
+        /*border: 1px solid rgba(0, 255, 0, 0.5);*/
+        color: white;
+        line-height: 1.8;
+        background-color: rgb(60, 60, 60);
+        width: 49.5%;
+        display: inline-block;
+        padding: 20px;
+        margin: 0px 0px 15px 0px;
+        box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.05), 0 0 1px 0px rgba(0, 0, 0, 0.1);
+    }
     /******   主要內容便利貼格式   ******/
     .PostItTitle {
         font-size: 2.8em;
@@ -143,12 +218,15 @@ a:active {
         font-weight: 200;
         color: rgb(180, 180, 180);
         display: block;
+        padding: 15px 0px 15px 0px;
+    }
+    .PostItTitle:first-child {
         padding: 0px 0px 15px 0px;
     }
     .PostItWhite {
         /*border: 1px solid rgba(0, 255, 0, 0.5);*/
         color: rgb(60, 60, 60);
-        line-height: 1.5;
+        line-height: 1.8;
         background-color: white;
         width: 100%;
         display: inline-block;
@@ -159,6 +237,7 @@ a:active {
     .PostItBlack {
         /*border: 1px solid rgba(0, 255, 0, 0.5);*/
         color: white;
+        line-height: 1.8;
         background-color: rgb(60, 60, 60);
         width: 100%;
         display: inline-block;
@@ -171,7 +250,7 @@ a:active {
 
 /******   網頁小型時候 (手機平板)   ******/
 
-@media screen and (max-width:959px) {
+@media screen and (max-width:999px) {
     /******   頁面主架構   ******/
     body {
         /*border: 1px solid rgba(255, 0, 0, 0.5);*/
@@ -225,7 +304,7 @@ a:active {
         text-decoration: none;
         display: inline-block;
         padding: 2px 5px 2px 5px;
-        margin: 0px 10px 0px 0px;
+        margin: 0px 10px 0px -5px;
         height: 100%;
     }
     nav .NavBtn:hover:not(.Current) {
@@ -239,12 +318,40 @@ a:active {
         text-decoration: none;
     }
     /******   玄關視覺概念圖   ******/
-    .Genkan {
+    .Genkan-Home {
         width: 100%;
         height: 600px;
         background-image: url(../image/Cover_S.jpg);
         background-size: cover;
         background-position: right bottom;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .Genkan-Publications {
+        width: 100%;
+        height: 600px;
+        background-image: url(../image/Publications_S.jpg);
+        background-size: cover;
+        background-position: right bottom;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .Genkan-Projects {
+        width: 100%;
+        height: 600px;
+        background-image: url(../image/Projects_S.jpg);
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .Genkan-Misc {
+        width: 100%;
+        height: 600px;
+        background-image: url(../image/Misc_S.jpg);
+        background-size: cover;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -262,6 +369,15 @@ a:active {
         position: relative;
         background-color: rgba(255, 255, 255, 0.5);
     }
+    /******   主要內容單欄   ******/
+    .OneColumn {
+        /*border: 1px solid rgba(0, 255, 0, 0.5);*/
+        margin: 0px 0px;
+        padding: 10px 0px 0px 0px;
+        width: 100%;
+        display: inline-block;
+        vertical-align: top;
+    }
     /******   主要內容左右欄   ******/
     .TwoColumn {
         /*border: 1px solid rgba(0, 255, 0, 0.5);*/
@@ -278,12 +394,15 @@ a:active {
         font-weight: 200;
         color: rgb(180, 180, 180);
         display: block;
+        padding: 15px 0px 15px 0px;
+    }
+    .PostItTitle:first-child {
         padding: 0px 0px 15px 0px;
     }
     .PostItWhite {
         /*border: 1px solid rgba(0, 255, 0, 0.5);*/
         color: rgb(60, 60, 60);
-        line-height: 1.5;
+        line-height: 1.8;
         background-color: white;
         width: 100%;
         display: inline-block;
@@ -294,6 +413,7 @@ a:active {
     .PostItBlack {
         /*border: 1px solid rgba(0, 255, 0, 0.5);*/
         color: white;
+        line-height: 1.8;
         background-color: rgb(60, 60, 60);
         width: 100%;
         display: inline-block;
