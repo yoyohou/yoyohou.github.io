@@ -332,13 +332,23 @@ article[class^="ProjectUnit"]>img {
 
 /******   便利貼格式   ******/
 
-.PostItTitle {
+h1.PostItTitle {
     font-size: 2em;
-    line-height: 1.2;
+    line-height: 1.4;
     font-weight: 200;
     color: rgb(180, 180, 180);
     display: block;
+    margin: 0px;
     padding: 15px 0px 15px 0px;
+}
+
+h2.PostItTitle {
+    font-size: 1.4em;
+    line-height: 1.6;
+    font-weight: 200;
+    display: block;
+    margin: 0px;
+    padding: 10px 0px 10px 0px;
 }
 
 .PostItTitle:first-child {
