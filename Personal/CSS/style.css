@@ -12,27 +12,75 @@
 /******   超連結   ******/
 
 a:link {
-    color: rgb(60, 60, 60);
-    font-weight: 600;
+    /*font-weight: 600;*/
     text-decoration: none;
 }
 
 a:visited {
-    color: rgb(60, 60, 60);
-    font-weight: 600;
+    /*font-weight: 600;*/
     text-decoration: none;
 }
 
 a:hover {
-    color: rgb(60, 60, 60);
-    font-weight: 600;
-    text-decoration: underline dotted rgba(120, 120, 120, 0.3);
+    /*font-weight: 600;*/
 }
 
 a:active {
-    color: rgb(255, 255, 255);
-    font-weight: 600;
-    text-decoration: none;
+    /*font-weight: 600;*/
+}
+
+
+/******   一般時超連結為純黑   ******/
+
+a:link:not(.NavLink) {
+    /*color: rgb(0, 200, 200);*/
+    color: rgb(0, 0, 0);
+    border-bottom: thin dotted rgba(30, 30, 30, 0.5);
+}
+
+a:visited:not(.NavLink) {
+    /*color: rgb(0, 200, 200);*/
+    color: rgb(30, 30, 30);
+    border-bottom: thin dotted rgba(30, 30, 30, 0.5);
+}
+
+a:hover:not(.NavLink) {
+    color: rgb(30, 30, 30);
+    background-color: rgba(30, 30, 30, 0.3);
+    /*text-decoration: underline dotted rgba(30, 30, 30, 0.5);*/
+}
+
+a:active:not(.NavLink) {
+    color: rgb(120, 120, 120);
+    background-color: rgba(120, 120, 120, 0.3);
+    /*text-decoration: underline dotted rgba(120, 120, 120, 0.5);*/
+}
+
+
+/******   在黑底上超連結為純白   ******/
+
+article[class$="Black"] a:link:not(.NavLink) {
+    /*color: rgb(0, 200, 200);*/
+    color: rgb(240, 240, 240);
+    border-bottom: thin dotted rgba(240, 240, 240, 0.5);
+}
+
+article[class$="Black"] a:visited:not(.NavLink) {
+    /*color: rgb(0, 200, 200);*/
+    color: rgb(240, 240, 240);
+    border-bottom: thin dotted rgba(240, 240, 240, 0.5);
+}
+
+article[class$="Black"] a:hover:not(.NavLink) {
+    color: rgb(240, 240, 240);
+    background-color: rgba(240, 240, 240, 0.3);
+    /*text-decoration: underline dotted rgba(240, 240, 240, 0.5);*/
+}
+
+article[class$="Black"] a:active:not(.NavLink) {
+    color: rgb(180, 180, 180);
+    background-color: rgba(180, 180, 180, 0.3);
+    /*text-decoration: underline dotted rgba(180, 180, 180, 0.5);*/
 }
 
 
@@ -121,15 +169,41 @@ nav .NavBtn {
     height: 100%;
 }
 
-nav .NavBtn:hover:not(.Current) {
-    color: rgb(255, 255, 255);
+nav .CurrentBtn {
+    background-color: rgba(60, 60, 60, 1);
+}
+
+nav .NavBtn:hover:not(.CurrentBtn) {
     background-color: rgba(60, 60, 60, 0.5);
+}
+
+a.CurrentLink {
+    color: rgb(255, 255, 255);
+    font-weight: 600;
     text-decoration: none;
 }
 
-nav .Current {
-    color: rgb(255, 255, 255);
-    background-color: rgba(60, 60, 60, 1);
+a.NavLink:link:not(.CurrentLink) {
+    color: rgb(60, 60, 60);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+a.NavLink:visited:not(.CurrentLink) {
+    color: rgb(60, 60, 60);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+a.NavLink:hover:not(.CurrentLink) {
+    color: rgb(60, 60, 60);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+a.NavLink:active:not(.CurrentLink) {
+    color: rgb(60, 60, 60);
+    font-weight: 600;
     text-decoration: none;
 }
 
@@ -189,7 +263,7 @@ nav .Current {
 
 .TitleBlock:first-of-type {
     position: relative;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(240, 240, 240, 0.5);
 }
 
 
@@ -209,7 +283,7 @@ nav .Current {
 
 .ProjectUnitBlack {
     /*border: 1px solid rgba(0, 0, 255, 1);*/
-    color: white;
+    color: rgb(200, 200, 200);
     text-align: left;
     background-color: rgb(60, 60, 60);
     display: inline-block;
@@ -240,7 +314,7 @@ article[class^="ProjectUnit"]>img {
 
 .ProjectDescription {
     font-size: 0.8em;
-    line-height: 1.4;
+    line-height: 1.6;
     display: block;
     overflow: hidden;
 }
@@ -274,7 +348,7 @@ article[class^="ProjectUnit"]>img {
 
 .PostItBlack {
     /*border: 1px solid rgba(0, 0, 255, 1);*/
-    color: white;
+    color: rgb(200, 200, 200);
     text-align: left;
     line-height: 1.8;
     background-color: rgb(60, 60, 60);
