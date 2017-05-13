@@ -348,6 +348,7 @@ article[class^="ProjectUnit"]>img {
 .PostItWhite {
     /*border: 1px solid rgba(0, 0, 255, 1);*/
     color: rgb(60, 60, 60);
+    font-weight: 200;
     text-align: left;
     line-height: 1.8;
     background-color: white;
@@ -359,6 +360,7 @@ article[class^="ProjectUnit"]>img {
 .PostItBlack {
     /*border: 1px solid rgba(0, 0, 255, 1);*/
     color: rgb(200, 200, 200);
+    font-weight: 200;
     text-align: left;
     line-height: 1.8;
     background-color: rgb(60, 60, 60);
