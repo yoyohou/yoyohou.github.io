@@ -12,21 +12,21 @@
 /******   超連結   ******/
 
 a:link {
-    /*font-weight: 600;*/
+    font-weight: 600;
     text-decoration: none;
 }
 
 a:visited {
-    /*font-weight: 600;*/
+    font-weight: 600;
     text-decoration: none;
 }
 
 a:hover {
-    /*font-weight: 600;*/
+    font-weight: 600;
 }
 
 a:active {
-    /*font-weight: 600;*/
+    font-weight: 600;
 }
 
 
@@ -35,13 +35,13 @@ a:active {
 a:link:not(.NavLink) {
     /*color: rgb(0, 200, 200);*/
     color: rgb(0, 0, 0);
-    border-bottom: thin dotted rgba(30, 30, 30, 0.5);
+    /*border-bottom: thin dotted rgba(30, 30, 30, 0.5);*/
 }
 
 a:visited:not(.NavLink) {
     /*color: rgb(0, 200, 200);*/
     color: rgb(30, 30, 30);
-    border-bottom: thin dotted rgba(30, 30, 30, 0.5);
+    /*border-bottom: thin dotted rgba(30, 30, 30, 0.5);*/
 }
 
 a:hover:not(.NavLink) {
