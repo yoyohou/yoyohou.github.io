@@ -100,7 +100,7 @@ header {
 /******   導覽列相關   ******/
 
 nav {
-    border: 1px solid rgba(0, 0, 255, 1);
+    /*border: 1px solid rgba(0, 0, 255, 1);*/
     display: block;
     padding: 0px;
 }
@@ -108,6 +108,8 @@ nav {
 nav>ul {
     /*border: 1px solid rgba(255, 0, 0, 1);*/
     list-style-position: inside;
+    margin: 0px;
+    padding: 0px;
 }
 
 nav .NavBtn {
