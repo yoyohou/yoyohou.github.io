@@ -12,21 +12,21 @@
 /******   超連結   ******/
 
 a:link {
-    font-weight: 600;
+    /*font-weight: 600;*/
     text-decoration: none;
 }
 
 a:visited {
-    font-weight: 600;
+    /*font-weight: 600;*/
     text-decoration: none;
 }
 
 a:hover {
-    font-weight: 600;
+    /*font-weight: 600;*/
 }
 
 a:active {
-    font-weight: 600;
+    /*font-weight: 600;*/
 }
 
 
@@ -34,14 +34,14 @@ a:active {
 
 a:link:not(.NavLink) {
     /*color: rgb(0, 200, 200);*/
-    color: rgb(0, 0, 0);
-    /*border-bottom: thin dotted rgba(30, 30, 30, 0.5);*/
+    color: rgb(30, 30, 30);
+    border-bottom: thin dotted rgba(30, 30, 30, 0.5);
 }
 
 a:visited:not(.NavLink) {
     /*color: rgb(0, 200, 200);*/
     color: rgb(30, 30, 30);
-    /*border-bottom: thin dotted rgba(30, 30, 30, 0.5);*/
+    border-bottom: thin dotted rgba(30, 30, 30, 0.5);
 }
 
 a:hover:not(.NavLink) {
@@ -54,6 +54,16 @@ a:active:not(.NavLink) {
     color: rgb(120, 120, 120);
     background-color: rgba(120, 120, 120, 0.3);
     /*text-decoration: underline dotted rgba(120, 120, 120, 0.5);*/
+}
+
+
+/******   列表格式   ******/
+
+ul {
+    /*border: 1px solid rgba(255, 0, 0, 1);*/
+    list-style-position: inside;
+    margin: 0px;
+    padding: 0px;
 }
 
 
@@ -391,6 +401,10 @@ footer {
 
 .W600 {
     font-weight: 600;
+}
+
+.W800 {
+    font-weight: 800;
 }
 
 .Emphasize {
