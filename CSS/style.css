@@ -34,20 +34,21 @@ a:active {
 /******   一般時超連結為純黑   ******/
 
 a.TextLink:link {
-    /*color: rgb(0, 200, 200);*/
+    /*color: rgb(0, 120, 200);*/
     color: rgb(30, 30, 30);
-    border-bottom: thin dotted rgba(30, 30, 30, 0.5);
+    border-bottom: thin dashed rgba(30, 30, 30, 0.8);
 }
 
 a.TextLink:visited {
-    /*color: rgb(0, 200, 200);*/
+    /*color: rgb(0, 120, 200);*/
     color: rgb(30, 30, 30);
-    border-bottom: thin dotted rgba(30, 30, 30, 0.5);
+    border-bottom: thin dashed rgba(30, 30, 30, 0.8);
 }
 
 a.TextLink:hover {
     color: rgb(30, 30, 30);
     background-color: rgba(30, 30, 30, 0.3);
+    border-bottom: none;
     transition-duration: 0.25s;
     /*text-decoration: underline dotted rgba(30, 30, 30, 0.5);*/
 }
@@ -64,18 +65,19 @@ a.TextLink:active {
 article[class$="Black"] a.TextLink:link {
     /*color: rgb(0, 200, 200);*/
     color: rgb(240, 240, 240);
-    border-bottom: thin dotted rgba(240, 240, 240, 0.5);
+    border-bottom: thin dashed rgba(240, 240, 240, 0.8);
 }
 
 article[class$="Black"] a.TextLink:visited {
     /*color: rgb(0, 200, 200);*/
     color: rgb(240, 240, 240);
-    border-bottom: thin dotted rgba(240, 240, 240, 0.5);
+    border-bottom: thin dashed rgba(240, 240, 240, 0.8);
 }
 
 article[class$="Black"] a.TextLink:hover {
     color: rgb(240, 240, 240);
     background-color: rgba(240, 240, 240, 0.3);
+    border-bottom: none;
     transition-duration: 0.25s;
     /*text-decoration: underline dotted rgba(240, 240, 240, 0.5);*/
 }
@@ -341,6 +343,7 @@ a.NavLink:active:not(.CurrentLink) {
     height: 600px;
     background-image: url(../image/Projects_S.jpg);
     background-size: cover;
+    background-position: right bottom;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -380,7 +383,7 @@ a.NavLink:active:not(.CurrentLink) {
     background-color: white;
     display: inline-block;
     vertical-align: top;
-    padding: 0px;
+    padding-bottom: 20px;
     margin: 0px 5px 12px 5px;
     box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.05), 0 0 1px 0px rgba(0, 0, 0, 0.1);
 }
@@ -392,7 +395,7 @@ a.NavLink:active:not(.CurrentLink) {
     background-color: rgb(60, 60, 60);
     display: inline-block;
     vertical-align: top;
-    padding: 0px;
+    padding-bottom: 20px;
     margin: 0px 5px 12px 5px;
     box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.05), 0 0 1px 0px rgba(0, 0, 0, 0.1);
 }
@@ -401,14 +404,29 @@ article[class^="ProjectUnit"]>img {
     width: 100%;
 }
 
-.ProjectText {
-    padding: 0px 10px 10px 10px;
+.ProjectText:last-child {
+    padding: 15px 20px 0px 20px;
+}
+
+.ProjectText:not(:last-child) {
+    padding: 15px 20px 15px 20px;
 }
 
 .ProjectTitle {
-    /*font-size: 1.5em;*/
-    line-height: 1.2;
+    font-size: 1em;
+    line-height: 1;
     font-weight: 600;
+    color: rgb(60, 60, 60);
+    display: block;
+    padding: 10px 0px 10px 0px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.ProjectSubtitle {
+    font-size: 0.8em;
+    line-height: 1em;
+    font-weight: 200;
     color: rgb(60, 60, 60);
     display: block;
     padding: 10px 0px 10px 0px;
@@ -420,6 +438,7 @@ article[class^="ProjectUnit"]>img {
     font-size: 0.8em;
     line-height: 1.6;
     display: block;
+    padding: 10px 0px 0px 0px;
     overflow: hidden;
 }
 
