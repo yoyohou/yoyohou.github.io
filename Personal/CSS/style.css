@@ -385,6 +385,39 @@ article[class^="PostIt"]>img {
 }
 
 
+/*#Facebook {*/
+
+
+/*border: 1px solid rgba(0, 0, 255, 1);*/
+
+
+/*color: rgb(60, 60, 60);*/
+
+
+/*font-weight: 200;*/
+
+
+/*text-align: left;*/
+
+
+/*line-height: 1.8;*/
+
+
+/*background-color: white;*/
+
+
+/*width: 100%;*/
+
+
+/*display: inline-block;*/
+
+
+/*box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.05), 0 0 1px 0px rgba(0, 0, 0, 0.1);*/
+
+
+/*}*/
+
+
 /******   網頁末尾   ******/
 
 footer {
@@ -417,6 +450,18 @@ footer {
 
 .W800 {
     font-weight: 800;
+}
+
+.FontSize1 {
+    font-size: 1em;
+}
+
+.FontSize14 {
+    font-size: 1.4em;
+}
+
+.FontSize2 {
+    font-size: 2em;
 }
 
 .Emphasize {
