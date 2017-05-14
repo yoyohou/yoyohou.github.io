@@ -6,7 +6,7 @@
 }
 
 
-/*****██████████████████   不分網頁尺寸   ██████████████████ *****/
+/*****██████████████████   元件定義   ██████████████████ *****/
 
 
 /******   超連結   ******/
@@ -21,39 +21,107 @@ a:visited {
     text-decoration: none;
 }
 
-a:hover {
-    /*font-weight: 600;*/
+
+/*a:hover {
+    font-weight: 600;
 }
 
 a:active {
-    /*font-weight: 600;*/
-}
+    font-weight: 600;
+}*/
 
 
 /******   一般時超連結為純黑   ******/
 
-a:link:not(.NavLink) {
+a.TextLink:link {
     /*color: rgb(0, 200, 200);*/
     color: rgb(30, 30, 30);
     border-bottom: thin dotted rgba(30, 30, 30, 0.5);
 }
 
-a:visited:not(.NavLink) {
+a.TextLink:visited {
     /*color: rgb(0, 200, 200);*/
     color: rgb(30, 30, 30);
     border-bottom: thin dotted rgba(30, 30, 30, 0.5);
 }
 
-a:hover:not(.NavLink) {
+a.TextLink:hover {
     color: rgb(30, 30, 30);
     background-color: rgba(30, 30, 30, 0.3);
+    transition-duration: 0.25s;
     /*text-decoration: underline dotted rgba(30, 30, 30, 0.5);*/
 }
 
-a:active:not(.NavLink) {
+a.TextLink:active {
     color: rgb(120, 120, 120);
     background-color: rgba(120, 120, 120, 0.3);
     /*text-decoration: underline dotted rgba(120, 120, 120, 0.5);*/
+}
+
+
+/******   在黑底上超連結為純白   ******/
+
+article[class$="Black"] a.TextLink:link {
+    /*color: rgb(0, 200, 200);*/
+    color: rgb(240, 240, 240);
+    border-bottom: thin dotted rgba(240, 240, 240, 0.5);
+}
+
+article[class$="Black"] a.TextLink:visited {
+    /*color: rgb(0, 200, 200);*/
+    color: rgb(240, 240, 240);
+    border-bottom: thin dotted rgba(240, 240, 240, 0.5);
+}
+
+article[class$="Black"] a.TextLink:hover {
+    color: rgb(240, 240, 240);
+    background-color: rgba(240, 240, 240, 0.3);
+    transition-duration: 0.25s;
+    /*text-decoration: underline dotted rgba(240, 240, 240, 0.5);*/
+}
+
+article[class$="Black"] a.TextLink:active {
+    color: rgb(180, 180, 180);
+    background-color: rgba(180, 180, 180, 0.3);
+    /*text-decoration: underline dotted rgba(180, 180, 180, 0.5);*/
+}
+
+
+/******   Button格式   ******/
+
+.BtnRow {
+    width: 100%;
+    text-align: center;
+}
+
+.BtnFrame {
+    margin: 10px;
+    display: inline-block;
+}
+
+button {
+    background-color: white;
+    border: 1px solid rgba(60, 60, 60, 1);
+    border-radius: 2px;
+    font-size: 1em;
+    font-weight: 600;
+    color: rgba(60, 60, 60, 1);
+    padding: 2px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+button:hover {
+    background-color: rgba(60, 60, 60, 1);
+    color: white;
+    transition-duration: 0.25s;
+}
+
+button:active {
+    background-color: white;
+    color: black;
+    transition-duration: 0s;
 }
 
 
@@ -61,37 +129,47 @@ a:active:not(.NavLink) {
 
 ul {
     /*border: 1px solid rgba(255, 0, 0, 1);*/
-    list-style-position: inside;
-    margin: 0px;
+    list-style-position: outside;
+    margin: 0px 15px;
     padding: 0px;
 }
 
-
-/******   在黑底上超連結為純白   ******/
-
-article[class$="Black"] a:link:not(.NavLink) {
-    /*color: rgb(0, 200, 200);*/
-    color: rgb(240, 240, 240);
-    border-bottom: thin dotted rgba(240, 240, 240, 0.5);
+ul>li {
+    list-style-type: square;
 }
 
-article[class$="Black"] a:visited:not(.NavLink) {
-    /*color: rgb(0, 200, 200);*/
-    color: rgb(240, 240, 240);
-    border-bottom: thin dotted rgba(240, 240, 240, 0.5);
+
+/******   表格格式   ******/
+
+td {
+    vertical-align: top;
 }
 
-article[class$="Black"] a:hover:not(.NavLink) {
-    color: rgb(240, 240, 240);
-    background-color: rgba(240, 240, 240, 0.3);
-    /*text-decoration: underline dotted rgba(240, 240, 240, 0.5);*/
+td:not(:last-child) {
+    padding-right: 15px;
 }
 
-article[class$="Black"] a:active:not(.NavLink) {
-    color: rgb(180, 180, 180);
-    background-color: rgba(180, 180, 180, 0.3);
-    /*text-decoration: underline dotted rgba(180, 180, 180, 0.5);*/
+
+/******   段落及標題格式   ******/
+
+h1+p {
+    margin-top: 0px;
 }
+
+h2+p {
+    margin-top: 0px;
+}
+
+p {
+    display: block;
+    -webkit-margin-before: 0.8em;
+    -webkit-margin-after: 0.8em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+
+
+/*****██████████████████   不分網頁尺寸   ██████████████████ *****/
 
 
 /******   頁面主架構   ******/
@@ -154,6 +232,15 @@ header {
     font-weight: 200;
 }
 
+span.LOGO {
+    margin: 0px 15px 0px 0px;
+}
+
+img.YoYo {
+    height: 1em;
+    /*display: block;*/
+}
+
 
 /******   導覽列相關   ******/
 
@@ -185,6 +272,12 @@ nav .CurrentBtn {
 
 nav .NavBtn:hover:not(.CurrentBtn) {
     background-color: rgba(60, 60, 60, 0.5);
+    transition-duration: 0.25s;
+}
+
+nav .NavBtn:active:not(.CurrentBtn) {
+    background-color: rgba(120, 120, 120, 0.3);
+    transition-duration: 0s;
 }
 
 a.CurrentLink {
@@ -209,6 +302,7 @@ a.NavLink:hover:not(.CurrentLink) {
     color: rgb(60, 60, 60);
     font-weight: 600;
     text-decoration: none;
+    transition-duration: 0.25s;
 }
 
 a.NavLink:active:not(.CurrentLink) {
@@ -343,12 +437,12 @@ h1.PostItTitle {
 }
 
 h2.PostItTitle {
-    font-size: 1.4em;
+    font-size: 1.2em;
     line-height: 1.6;
     font-weight: 200;
     display: block;
     margin: 0px;
-    padding: 10px 0px 10px 0px;
+    padding: 10px 0px 15px 0px;
 }
 
 .PostItTitle:first-child {
@@ -381,41 +475,15 @@ h2.PostItTitle {
 
 article[class^="PostIt"]>img {
     width: 100%;
-    padding: 20px 0px;
+    padding: 5px 0px;
 }
 
-
-/*#Facebook {*/
-
-
-/*border: 1px solid rgba(0, 0, 255, 1);*/
-
-
-/*color: rgb(60, 60, 60);*/
-
-
-/*font-weight: 200;*/
-
-
-/*text-align: left;*/
-
-
-/*line-height: 1.8;*/
-
-
-/*background-color: white;*/
-
-
-/*width: 100%;*/
-
-
-/*display: inline-block;*/
-
-
-/*box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.05), 0 0 1px 0px rgba(0, 0, 0, 0.1);*/
-
-
-/*}*/
+.DateCaption {
+    font-weight: 200;
+    font-size: 0.8em;
+    color: rgb(120, 120, 120);
+    margin-left: 1em;
+}
 
 
 /******   網頁末尾   ******/
@@ -587,5 +655,8 @@ footer {
     .PostItBlack {
         padding: 15px;
         margin: 0px 0px 10px 0px;
+    }
+    #FacebookBlock {
+        display: none;
     }
 }
