@@ -341,7 +341,7 @@ a.NavLink:active:not(.CurrentLink) {
 .Genkan-Projects {
     width: 100%;
     height: 600px;
-    background-image: url(../image/Projects_S.jpg);
+    background-image: url(../image/Projects_S1.jpg);
     background-size: cover;
     background-position: right bottom;
     display: flex;
