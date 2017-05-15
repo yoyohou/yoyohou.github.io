@@ -1,55 +1,9 @@
-/*
-* Noto Sans TC (Chinese_traditional) http://www.google.com/fonts/earlyaccess
- */
-
-@font-face {
-    font-family: 'Noto Sans TC';
-    font-style: normal;
-    font-weight: 100;
-    src: url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Thin.woff2) format('woff2'), url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Thin.woff) format('woff'), url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Thin.otf) format('opentype');
-}
-
-@font-face {
-    font-family: 'Noto Sans TC';
-    font-style: normal;
-    font-weight: 300;
-    src: url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Light.woff2) format('woff2'), url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Light.woff) format('woff'), url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Light.otf) format('opentype');
-}
-
-@font-face {
-    font-family: 'Noto Sans TC';
-    font-style: normal;
-    font-weight: 400;
-    src: url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Regular.woff2) format('woff2'), url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Regular.woff) format('woff'), url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Regular.otf) format('opentype');
-}
-
-@font-face {
-    font-family: 'Noto Sans TC';
-    font-style: normal;
-    font-weight: 500;
-    src: url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Medium.woff2) format('woff2'), url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Medium.woff) format('woff'), url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Medium.otf) format('opentype');
-}
-
-@font-face {
-    font-family: 'Noto Sans TC';
-    font-style: normal;
-    font-weight: 700;
-    src: url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Bold.woff2) format('woff2'), url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Bold.woff) format('woff'), url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Bold.otf) format('opentype');
-}
-
-@font-face {
-    font-family: 'Noto Sans TC';
-    font-style: normal;
-    font-weight: 900;
-    src: url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Black.woff2) format('woff2'), url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Black.woff) format('woff'), url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Black.otf) format('opentype');
-}
-
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    /*font-family: 'Noto Sans TC', 'PingFangTC', 'Microsoft JhengHei', 'Arial', sans-serif;*/
-    font-family: 'Noto Sans TC', serif;
+    font-family: "source-han-sans-traditional", 'PingFangTC', 'Microsoft JhengHei', sans-serif;
+    /*font-family: 'PingFangTC', 'Microsoft JhengHei', sans-serif;*/
 }
 
 
@@ -59,22 +13,22 @@
 /******   超連結   ******/
 
 a:link {
-    /*font-weight: 600;*/
+    /*font-weight: 700;*/
     text-decoration: none;
 }
 
 a:visited {
-    /*font-weight: 600;*/
+    /*font-weight: 700;*/
     text-decoration: none;
 }
 
 
 /*a:hover {
-    font-weight: 600;
+    font-weight: 700;
 }
 
 a:active {
-    font-weight: 600;
+    font-weight: 700;
 }*/
 
 
@@ -153,7 +107,7 @@ button {
     border: 1px solid rgba(60, 60, 60, 1);
     border-radius: 2px;
     font-size: 1em;
-    font-weight: 600;
+    font-weight: 700;
     color: rgba(60, 60, 60, 1);
     padding: 2px 8px;
     text-align: center;
@@ -345,32 +299,32 @@ nav .NavBtn:active:not(.CurrentBtn) {
 
 a.CurrentLink {
     color: rgb(255, 255, 255);
-    font-weight: 600;
+    font-weight: 700;
     text-decoration: none;
 }
 
 a.NavLink:link:not(.CurrentLink) {
     color: rgb(60, 60, 60);
-    font-weight: 600;
+    font-weight: 700;
     text-decoration: none;
 }
 
 a.NavLink:visited:not(.CurrentLink) {
     color: rgb(60, 60, 60);
-    font-weight: 600;
+    font-weight: 700;
     text-decoration: none;
 }
 
 a.NavLink:hover:not(.CurrentLink) {
     color: rgb(60, 60, 60);
-    font-weight: 600;
+    font-weight: 700;
     text-decoration: none;
     transition-duration: 0.25s;
 }
 
 a.NavLink:active:not(.CurrentLink) {
     color: rgb(60, 60, 60);
-    font-weight: 600;
+    font-weight: 700;
     text-decoration: none;
 }
 
@@ -427,7 +381,7 @@ a.NavLink:active:not(.CurrentLink) {
     margin: 0px 0px;
     padding: 0px 60px 0px 0px;
     color: rgb(255, 255, 255);
-    font-weight: 600;
+    font-weight: 700;
     display: inline-block;
 }
 
@@ -506,7 +460,7 @@ article[class^="ProjectUnit"]>figure.ZoomToCenter>img:hover {
 .ProjectTitle {
     font-size: 1em;
     line-height: 1;
-    font-weight: 600;
+    font-weight: 700;
     color: rgb(60, 60, 60);
     display: block;
     padding: 10px 0px 10px 0px;
@@ -644,20 +598,52 @@ footer {
     display: inline-block;
 }
 
+.W100 {
+    font-weight: 100;
+}
+
 .W200 {
     font-weight: 200;
+}
+
+.W300 {
+    font-weight: 300;
 }
 
 .W400 {
     font-weight: 400;
 }
 
+.W500 {
+    font-weight: 500;
+}
+
 .W600 {
     font-weight: 600;
 }
 
+.W700 {
+    font-weight: 700;
+}
+
 .W800 {
     font-weight: 800;
+}
+
+.WNormal {
+    font-weight: normal;
+}
+
+.WBold {
+    font-weight: bold;
+}
+
+.WBolder {
+    font-weight: bolder;
+}
+
+.WLighter {
+    font-weight: lighter;
 }
 
 .FontSize1 {

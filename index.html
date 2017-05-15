@@ -9,6 +9,38 @@
     <!--<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">-->
     <link rel="stylesheet" type="text/css" href="./CSS/style.css">
     <link rel="icon" type="image/png" href="https://dl.dropboxusercontent.com/u/21877342/PUBLIC/favicon.ico">
+    <!--TypeKit 思源黑體用-->
+    <script>
+        (function (d) {
+            var config = {
+                    kitId: 'jik0iwp',
+                    scriptTimeout: 3000,
+                    async: true
+                },
+                h = d.documentElement,
+                t = setTimeout(function () {
+                    h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+                }, config.scriptTimeout),
+                tk = d.createElement("script"),
+                f = false,
+                s = d.getElementsByTagName("script")[0],
+                a;
+            h.className += " wf-loading";
+            tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+            tk.async = true;
+            tk.onload = tk.onreadystatechange = function () {
+                a = this.readyState;
+                if (f || a && a != "complete" && a != "loaded") return;
+                f = true;
+                clearTimeout(t);
+                try {
+                    Typekit.load(config)
+                } catch (e) {}
+            };
+            s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
+    <!--fontawesome icon-->
     <script src="https://use.fontawesome.com/3e94851144.js"></script>
     <title>YoYo | HOU, Tsung-Yu 侯宗佑</title>
     <meta name="description" content="PhD student . Information Science . Cornell University . HCI . HRI . UX Design . Interaction Design . HOU, Tsung-Yu . YoYo Hou . 侯宗佑 . 人機互動 . 使用者經驗設計 . 機器人"
@@ -88,10 +120,10 @@
                 <h1 class="PostItTitle">How to pronounce my name?</h1>
                 <p>Inspired by my friend <a class="TextLink" href="https://yymao.github.io/" target="_blank" title="">Yao-Yuan Mao</a>,
                     I think it would be interesting to explain how to pronounce my name here.</p>
-                <p>To start simple, you can always call me <b><span class="W600">YoYo</span></b>. All my family call me YoYo,
+                <p>To start simple, you can always call me <b><span class="W700">YoYo</span></b>. All my family call me YoYo,
                     too (though they do so in a Taiwanese intonation). </p>
-                <p>Still want to give it a try? My name in Chinese, 侯宗佑, is pronounced in Mandarin as <b><span class="W600">hóh-dsōng-yòh</span></b>                    (<i><b><span class="W600">ds</span></b></i> as in Be<i><b><span class="W600">ds</span></b></i>) and in
-                    Taiwanese as <b><span class="W600">hâu-tsong-iū</span></b>. </p>
+                <p>Still want to give it a try? My name in Chinese, 侯宗佑, is pronounced in Mandarin as <b><span class="W700">hóh-dsōng-yòh</span></b>                    (<i><b><span class="W700">ds</span></b></i> as in Be<i><b><span class="W700">ds</span></b></i>) and in
+                    Taiwanese as <b><span class="W700">hâu-tsong-iū</span></b>. </p>
                 <p>Here's how <b><a class="TextLink" href="https://translate.google.com/#zh-CN/en/%E4%BE%AF%E5%AE%97%E4%BD%91" target="_blank" title="">Google Translate</a></b>                    pronounces my name.</p>
             </article>
             <!--測試便利貼與按鈕-->
@@ -101,15 +133,99 @@
                     omnis reprehenderit nesciunt. Quisquam, mollitia.</p>
                 <p>
                     <!--測試字重使用-->
-                    <div class="W100">W100: Lorem ipsum dolor sit amet.</div>
-                    <div class="W200">W200: Lorem ipsum dolor sit amet.</div>
-                    <div class="W300">W300: Lorem ipsum dolor sit amet.</div>
-                    <div class="W400">W400: Lorem ipsum dolor sit amet.</div>
-                    <div class="W500">W500: Lorem ipsum dolor sit amet.</div>
-                    <div class="W600">W600: Lorem ipsum dolor sit amet.</div>
-                    <div class="W700">W700: Lorem ipsum dolor sit amet.</div>
-                    <div class="W800">W800: Lorem ipsum dolor sit amet.</div>
-                    <div class="W900">W900: Lorem ipsum dolor sit amet.</div>
+
+                    <table>
+                        <tr>
+                            <td>NO TAG</td>
+                            <td>Lorem ipsum dolor sit amet.</td>
+                        </tr>
+                        <tr>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>W100</td>
+                            <td>
+                                <div class="W100">Lorem ipsum dolor sit amet.</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>W200</td>
+                            <td>
+                                <div class="W200">Lorem ipsum dolor sit amet.</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>W300</td>
+                            <td>
+                                <div class="W300">Lorem ipsum dolor sit amet.</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>W400</td>
+                            <td>
+                                <div class="W400">Lorem ipsum dolor sit amet.</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>W500</td>
+                            <td>
+                                <div class="W500">Lorem ipsum dolor sit amet.</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>W600</td>
+                            <td>
+                                <div class="W600">Lorem ipsum dolor sit amet.</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>W700</td>
+                            <td>
+                                <div class="W700">Lorem ipsum dolor sit amet.</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>W800</td>
+                            <td>
+                                <div class="W800">Lorem ipsum dolor sit amet.</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>W900</td>
+                            <td>
+                                <div class="W900">Lorem ipsum dolor sit amet.</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Lighter</td>
+                            <td>
+                                <div class="WLighter">Lorem ipsum dolor sit amet.</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Normal</td>
+                            <td>
+                                <div class="WNormal">Lorem ipsum dolor sit amet.</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Bold</td>
+                            <td>
+                                <div class="WBold">Lorem ipsum dolor sit amet.</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Bolder</td>
+                            <td>
+                                <div class="WBolder">Lorem ipsum dolor sit amet.</div>
+                            </td>
+                        </tr>
+                    </table>
                 </p>
                 <div class="BtnRow">
                     <div class="BtnFrame"><a href="https://www.asus.com/" target="_blank" title=""><button type="button">Click Me</button></a></div>
@@ -143,7 +259,7 @@
                 <h1 class="PostItTitle">Travel</h1>
                 <table>
                     <tr>
-                        <td class="W600">2017 -</td>
+                        <td class="W700">2017 -</td>
                         <td></td>
                     </tr>
                     <tr>
