@@ -185,7 +185,7 @@ body {
 
 .Container {
     /*border: 1px solid rgba(255, 0, 0, 1);*/
-    max-width: 960px;
+    max-width: 1150px;
     margin: 0px auto;
 }
 
@@ -211,6 +211,20 @@ body {
     vertical-align: top;
 }
 
+.TwoColumnWide {
+    /*border: 1px solid rgba(0, 255, 0, 1);*/
+    margin: 0px auto;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.TwoColumnNarrow {
+    /*border: 1px solid rgba(0, 255, 0, 1);*/
+    margin: 0px auto;
+    display: inline-block;
+    vertical-align: top;
+}
+
 
 /******   網頁頭   ******/
 
@@ -228,14 +242,14 @@ header {
 
 .NameTitle {
     /*border: 1px solid rgba(255, 0, 0, 1);*/
+    font-size: 1.6em;
     color: rgb(180, 180, 180);
-    font-size: 1.8em;
     display: block;
     font-weight: 200;
 }
 
 span.LOGO {
-    margin: 0px 15px 0px 0px;
+    margin: 0px 5px 0px 0px;
 }
 
 img.YoYo {
@@ -354,6 +368,8 @@ a.NavLink:active:not(.CurrentLink) {
     height: 600px;
     background-image: url(../image/Misc_S.jpg);
     background-size: cover;
+    background-position: center center;
+    /*background-position: bottom;*/
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -386,6 +402,7 @@ a.NavLink:active:not(.CurrentLink) {
     padding-bottom: 20px;
     margin: 0px 5px 12px 5px;
     box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.05), 0 0 1px 0px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
 }
 
 .ProjectUnitBlack {
@@ -398,10 +415,37 @@ a.NavLink:active:not(.CurrentLink) {
     padding-bottom: 20px;
     margin: 0px 5px 12px 5px;
     box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.05), 0 0 1px 0px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
 }
 
-article[class^="ProjectUnit"]>img {
+article[class^="ProjectUnit"]>figure {
+    /*border: 1px solid rgba(0, 0, 255, 1);*/
     width: 100%;
+    margin: 0px;
+    padding: 0px;
+    background: #fff;
+    overflow: hidden;
+}
+
+article[class^="ProjectUnit"] img {
+    width: 100%;
+    margin: 0px;
+}
+
+article[class^="ProjectUnit"]>figure.ZoomToCenter>img {
+    -webkit-transform: scale(1.02);
+    transform: scale(1.02);
+    /*-webkit-filter: grayscale(80%);*/
+    /*filter: grayscale(80%);*/
+    -webkit-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+}
+
+article[class^="ProjectUnit"]>figure.ZoomToCenter>img:hover {
+    /*-webkit-filter: grayscale(0%);*/
+    /*filter: grayscale(0%);*/
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
 }
 
 .ProjectText:last-child {
@@ -492,6 +536,28 @@ h2.PostItTitle {
     box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.05), 0 0 1px 0px rgba(0, 0, 0, 0.1);
 }
 
+article[class^="PostIt"]>figure {
+    /*border: 1px solid rgba(0, 0, 255, 1);*/
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    background: #fff;
+    overflow: hidden;
+}
+
+article[class^="PostIt"]>figure.ZoomToCenter>img {
+    width: 100%;
+    -webkit-transform: scale(1.02);
+    transform: scale(1.02);
+    -webkit-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+}
+
+article[class^="PostIt"]>figure.ZoomToCenter>img:hover {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
 article[class^="PostIt"]>img {
     width: 100%;
     padding: 5px 0px;
@@ -501,7 +567,7 @@ article[class^="PostIt"]>img {
     font-weight: 200;
     font-size: 0.8em;
     color: rgb(120, 120, 120);
-    margin-left: 1em;
+    /*margin-left: 1em;*/
 }
 
 
@@ -522,6 +588,10 @@ footer {
 
 
 /******   雜項控制   ******/
+
+.InlineBlock {
+    display: inline-block;
+}
 
 .W200 {
     font-weight: 200;
@@ -566,6 +636,7 @@ footer {
     /******   頁面主架構   ******/
     .Container {
         width: 80%;
+        max-width: 960px;
     }
     /******   網頁頭   ******/
     header {
@@ -577,7 +648,7 @@ footer {
     }
     .NameTitle {
         float: left;
-        margin-top: 15px;
+        margin-top: 18px;
     }
     /******   導覽列相關   ******/
     nav {
@@ -595,13 +666,19 @@ footer {
     /******   主要內容單欄   ******/
     .OneColumn {
         padding: 20px 0px 20px 0px;
-        max-width: 800px;
     }
     /******   主要內容左右欄   ******/
     .TwoColumn {
         padding: 20px 4px 20px 4px;
         width: 49%;
-        max-width: 800px;
+    }
+    .TwoColumnWide {
+        padding: 20px 4px 20px 4px;
+        width: 61%;
+    }
+    .TwoColumnNarrow {
+        padding: 20px 4px 20px 4px;
+        width: 37%;
     }
     /******   專案內容格式   ******/
     .ProjectUnitWhite {
@@ -622,12 +699,77 @@ footer {
 }
 
 
-/*****██████████████████   網頁小型時候 (手機平板)   ██████████████████*****/
+/*****██████████████████   網頁中型時候 (平板)   ██████████████████ *****/
 
-@media screen and (max-width:999px) {
+@media screen and (min-width:600px) and (max-width:999px) {
     /******   頁面主架構   ******/
     .Container {
-        width: 90%;
+        width: 85%;
+        max-width: 600px;
+    }
+    /******   網頁頭   ******/
+    header {
+        /*border: 0px solid rgba(0, 0, 255, 0.5);*/
+        position: static;
+        overflow: auto;
+    }
+    .NameTitle {
+        margin-top: 10px;
+    }
+    /******   導覽列相關   ******/
+    nav {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav .NavBtn {
+        margin: 0px 10px 0px -5px;
+    }
+    /******   玄關視覺概念圖   ******/
+    .TitleBlock {
+        font-size: 4em;
+    }
+    /******   主要內容單欄   ******/
+    .OneColumn {
+        padding: 20px 0px 0px 0px;
+    }
+    /******   主要內容左右欄   ******/
+    .TwoColumn {
+        padding: 20px 4px 0px 4px;
+        width: 100%;
+    }
+    .TwoColumnWide {
+        padding: 20px 4px 0px 4px;
+        width: 100%;
+    }
+    .TwoColumnNarrow {
+        padding: 20px 4px 0px 4px;
+        width: 100%;
+    }
+    /******   專案內容格式   ******/
+    .ProjectUnitWhite {
+        width: 80%;
+    }
+    .ProjectUnitBlack {
+        width: 80%;
+    }
+    /******   便利貼格式   ******/
+    .PostItWhite {
+        padding: 15px;
+        margin: 0px 0px 10px 0px;
+    }
+    .PostItBlack {
+        padding: 15px;
+        margin: 0px 0px 10px 0px;
+    }
+}
+
+
+/*****██████████████████   網頁小型時候 (手機)   ██████████████████*****/
+
+@media screen and (max-width:599px) {
+    /******   頁面主架構   ******/
+    .Container {
+        width: 95%;
     }
     /******   網頁頭   ******/
     header {
@@ -659,12 +801,22 @@ footer {
         padding: 20px 4px 0px 4px;
         width: 100%;
     }
+    .TwoColumnWide {
+        padding: 20px 4px 0px 4px;
+        width: 100%;
+    }
+    .TwoColumnNarrow {
+        padding: 20px 4px 0px 4px;
+        width: 100%;
+    }
     /******   專案內容格式   ******/
     .ProjectUnitWhite {
         width: 90%;
+        max-width: 480px;
     }
     .ProjectUnitBlack {
         width: 90%;
+        max-width: 480px;
     }
     /******   便利貼格式   ******/
     .PostItWhite {
