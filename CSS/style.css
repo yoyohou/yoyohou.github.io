@@ -1,8 +1,55 @@
+/*
+* Noto Sans TC (Chinese_traditional) http://www.google.com/fonts/earlyaccess
+ */
+
+@font-face {
+    font-family: 'Noto Sans TC';
+    font-style: normal;
+    font-weight: 100;
+    src: url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Thin.woff2) format('woff2'), url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Thin.woff) format('woff'), url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Thin.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Noto Sans TC';
+    font-style: normal;
+    font-weight: 300;
+    src: url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Light.woff2) format('woff2'), url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Light.woff) format('woff'), url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Light.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Noto Sans TC';
+    font-style: normal;
+    font-weight: 400;
+    src: url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Regular.woff2) format('woff2'), url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Regular.woff) format('woff'), url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Regular.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Noto Sans TC';
+    font-style: normal;
+    font-weight: 500;
+    src: url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Medium.woff2) format('woff2'), url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Medium.woff) format('woff'), url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Medium.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Noto Sans TC';
+    font-style: normal;
+    font-weight: 700;
+    src: url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Bold.woff2) format('woff2'), url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Bold.woff) format('woff'), url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Bold.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Noto Sans TC';
+    font-style: normal;
+    font-weight: 900;
+    src: url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Black.woff2) format('woff2'), url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Black.woff) format('woff'), url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Black.otf) format('opentype');
+}
+
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    font-family: 'PingFangTC', 'Microsoft JhengHei', 'Arial', sans-serif;
+    /*font-family: 'Noto Sans TC', 'PingFangTC', 'Microsoft JhengHei', 'Arial', sans-serif;*/
+    font-family: 'Noto Sans TC', serif;
 }
 
 
@@ -36,13 +83,13 @@ a:active {
 a.TextLink:link {
     /*color: rgb(0, 120, 200);*/
     color: rgb(30, 30, 30);
-    border-bottom: thin dashed rgba(30, 30, 30, 0.8);
+    border-bottom: thin dotted rgba(30, 30, 30, 0.8);
 }
 
 a.TextLink:visited {
     /*color: rgb(0, 120, 200);*/
     color: rgb(30, 30, 30);
-    border-bottom: thin dashed rgba(30, 30, 30, 0.8);
+    border-bottom: thin dotted rgba(30, 30, 30, 0.8);
 }
 
 a.TextLink:hover {
@@ -65,13 +112,13 @@ a.TextLink:active {
 article[class$="Black"] a.TextLink:link {
     /*color: rgb(0, 200, 200);*/
     color: rgb(240, 240, 240);
-    border-bottom: thin dashed rgba(240, 240, 240, 0.8);
+    border-bottom: thin dotted rgba(240, 240, 240, 0.8);
 }
 
 article[class$="Black"] a.TextLink:visited {
     /*color: rgb(0, 200, 200);*/
     color: rgb(240, 240, 240);
-    border-bottom: thin dashed rgba(240, 240, 240, 0.8);
+    border-bottom: thin dotted rgba(240, 240, 240, 0.8);
 }
 
 article[class$="Black"] a.TextLink:hover {
@@ -705,7 +752,7 @@ footer {
 
 /*****██████████████████   網頁中型時候 (平板)   ██████████████████ *****/
 
-@media screen and (min-width:600px) and (max-width:999px) {
+@media screen and (min-width:600px) and (max-width:1000px) {
     /******   頁面主架構   ******/
     .Container {
         width: 85%;
@@ -770,7 +817,7 @@ footer {
 
 /*****██████████████████   網頁小型時候 (手機)   ██████████████████*****/
 
-@media screen and (max-width:599px) {
+@media screen and (max-width:600px) {
     /******   頁面主架構   ******/
     .Container {
         width: 95%;
