@@ -458,11 +458,12 @@ article[class^="ProjectUnit"]>figure {
 article[class^="ProjectUnit"] img {
     width: 100%;
     margin: 0px;
+    display: block;
 }
 
 article[class^="ProjectUnit"]>figure.ZoomToCenter>img {
-    -webkit-transform: scale(1.02);
-    transform: scale(1.02);
+    -webkit-transform: scale(1);
+    transform: scale(1);
     /*-webkit-filter: grayscale(80%);*/
     /*filter: grayscale(80%);*/
     -webkit-transition: .25s ease-in-out;
@@ -571,10 +572,18 @@ article[class^="PostIt"]>figure {
     overflow: hidden;
 }
 
+article[class^="PostIt"] img {
+    width: 100%;
+    padding: 5px 0px;
+    display: block;
+}
+
 article[class^="PostIt"]>figure.ZoomToCenter>img {
     width: 100%;
-    -webkit-transform: scale(1.02);
-    transform: scale(1.02);
+    /*要縮放的要設定 padding=0 以免縮放時整個框會放大縮小*/
+    padding: 0px;
+    -webkit-transform: scale(1);
+    transform: scale(1);
     -webkit-transition: .25s ease-in-out;
     transition: .25s ease-in-out;
 }
@@ -582,11 +591,6 @@ article[class^="PostIt"]>figure.ZoomToCenter>img {
 article[class^="PostIt"]>figure.ZoomToCenter>img:hover {
     -webkit-transform: scale(1.05);
     transform: scale(1.05);
-}
-
-article[class^="PostIt"]>img {
-    width: 100%;
-    padding: 5px 0px;
 }
 
 .DateCaption {
@@ -620,6 +624,11 @@ article[class^="PostIt"]>img {
 
 footer {
     width: 100%;
+    z-index: 5;
+}
+
+.ContainerFooter {
+    width: 100%;
     height: 40px;
     font-size: 0.8em;
     color: rgb(180, 180, 180);
@@ -628,7 +637,28 @@ footer {
     flex-direction: column;
     justify-content: center;
     box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.05), 0 0 2px 0px rgba(0, 0, 0, 0.1);
-    z-index: 5;
+}
+
+.ToPageTop {
+    font-size: 1.6em;
+    color: rgb(60, 60, 60);
+    margin: 15px;
+}
+
+.ToPageTop>a:link {
+    color: rgb(60, 60, 60);
+}
+
+.ToPageTop>a:visited {
+    color: rgb(60, 60, 60);
+}
+
+.ToPageTop>a:hover {
+    color: rgb(180, 180, 180);
+}
+
+.ToPageTop>a:active {
+    color: white;
 }
 
 
@@ -772,6 +802,9 @@ footer {
     .PostItBlack {
         padding: 20px;
         margin: 2px 2px 10px 2px;
+    }
+    .ToPageTop {
+        display: none;
     }
 }
 
