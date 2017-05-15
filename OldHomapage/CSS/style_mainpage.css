@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+    font-family: 'PingFangTC-Thin', 'Microsoft JhengHei', 'Roboto', sans-serif;
+}
+
+body {
+    background-color: white;
+}
+
+A:link {
+    color: white;
+    text-decoration: none;
+}
+
+A:visited {
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+}
+
+A:active {
+    color: white;
+    text-decoration: none;
+}
+
+A:hover {
+    color: white;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 30px;
+    color: rgba(0, 100, 180, 1);
+    padding: 10px;
+    padding-bottom: 25px;
+    box-shadow: 0 5px 9px rgba(0, 0, 0, 0.16);
+}
+
+.button {
+    Color: white;
+    text-align: center;
+    width: 2px solid black;
+    float: left;
+    background-color: rgba(0, 100, 180, 1);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.24);
+    margin: 5px;
+    padding: 5px;
+}
+
+.button:hover {
+    background-color: rgba(0, 50, 90, 1);
+}
+
+
+/******   專案內容格式   ******/
+
+.ProjectUnitWhite {
+    /*border: 1px solid rgba(0, 0, 255, 1);*/
+    width: 400px;
+    color: rgb(60, 60, 60);
+    text-align: left;
+    background-color: white;
+    padding-bottom: 20px;
+    margin: 0px 5px 12px 5px;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.05), 0 0 1px 0px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+article[class^="ProjectUnit"]>figure {
+    /*border: 1px solid rgba(0, 0, 255, 1);*/
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    background: #fff;
+    overflow: hidden;
+}
+
+article[class^="ProjectUnit"] img {
+    width: 100%;
+    margin: 0px;
+}
+
+article[class^="ProjectUnit"]>figure.ZoomToCenter>img {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    /*-webkit-filter: grayscale(80%);*/
+    /*filter: grayscale(80%);*/
+    -webkit-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+}
+
+article[class^="ProjectUnit"]>figure.ZoomToCenter>img:hover {
+    /*-webkit-filter: grayscale(0%);*/
+    /*filter: grayscale(0%);*/
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+.ProjectText:last-child {
+    padding: 15px 20px 0px 20px;
+}
+
+.ProjectText:not(:last-child) {
+    padding: 15px 20px 15px 20px;
+}
+
+.ProjectTitle {
+    font-size: 1em;
+    line-height: 1;
+    font-weight: 700;
+    color: rgb(60, 60, 60);
+    display: block;
+    padding: 10px 0px 10px 0px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.ProjectSubtitle {
+    font-size: 0.8em;
+    line-height: 1em;
+    font-weight: 100;
+    color: rgb(60, 60, 60);
+    display: block;
+    padding: 10px 0px 10px 0px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.ProjectDescription {
+    font-size: 0.8em;
+    line-height: 1.6;
+    display: block;
+    padding: 10px 0px 0px 0px;
+    overflow: hidden;
+}
