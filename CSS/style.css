@@ -570,6 +570,10 @@ article[class^="PostIt"]>img {
     /*margin-left: 1em;*/
 }
 
+#FacebookPostIt {
+    overflow: hidden;
+}
+
 
 /******   網頁末尾   ******/
 
