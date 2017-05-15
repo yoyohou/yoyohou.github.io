@@ -9,6 +9,37 @@
     <!--<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">-->
     <link rel="stylesheet" type="text/css" href="./CSS/style.css">
     <link rel="icon" type="image/png" href="https://dl.dropboxusercontent.com/u/21877342/PUBLIC/favicon.ico">
+    <!--TypeKit 思源黑體用-->
+    <script>
+        (function (d) {
+            var config = {
+                    kitId: 'jik0iwp',
+                    scriptTimeout: 3000,
+                    async: true
+                },
+                h = d.documentElement,
+                t = setTimeout(function () {
+                    h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+                }, config.scriptTimeout),
+                tk = d.createElement("script"),
+                f = false,
+                s = d.getElementsByTagName("script")[0],
+                a;
+            h.className += " wf-loading";
+            tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+            tk.async = true;
+            tk.onload = tk.onreadystatechange = function () {
+                a = this.readyState;
+                if (f || a && a != "complete" && a != "loaded") return;
+                f = true;
+                clearTimeout(t);
+                try {
+                    Typekit.load(config)
+                } catch (e) {}
+            };
+            s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
     <script src="https://use.fontawesome.com/3e94851144.js"></script>
     <title>YoYo | HOU, Tsung-Yu 侯宗佑</title>
 </head>
@@ -41,9 +72,10 @@
     </div>
     <div class="Container" id="DivContent">
         <div class="TwoColumn">
+
             <article class="PostItWhite">
+                <h2 class="PostItTitle">HCI PhD申請心得 #工業設計公費</h2>
                 <img src="./image/misc_studyabroad_application.jpg" alt="">
-                <h2 class="PostItTitle">[錄取] HCI/Cornell Umich UCSD #PhD #工業設計公費準備方式</h2>
                 <p>我在PTT留學板上有分享申請博士班的心得，同時包括教育部公費留考工業設計類別的準備方式。</p>
                 <p>I've shared my PhD application process on PTT forum . I also included how I prepared for the Government Sponsorship
                     for Overseas Study, which is provided by Ministry of Education, Taiwan (written in Chinese).</p>
@@ -58,9 +90,8 @@
         </div>
         <div class="TwoColumn">
             <article class="PostItWhite">
-
+                <h2 class="PostItTitle">RE: 建中天才，台大醫科，然後呢？</h2>
                 <img src="./image/misc_gossiping_education.jpg" alt="">
-                <h2 class="PostItTitle">Re: [問卦] 建中天才，台大醫科，然後呢？</h2>
                 <p>對於台灣教育以及升學主義的一點個人經驗與想法。希望台灣能夠越來越多元，讓每個人都能變成自己最喜歡的樣子</p>
                 <p>My thought on education and credentialism in Taiwan (written in Chinese).</p>
                 <div class="BtnRow">
