@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+    font-family: 'PingFangTC-Thin', 'Microsoft JhengHei', 'Roboto', sans-serif;
+}
+
+body {
+    background-color: rgb(240, 240, 240);
+}
+
+.Container {
+    width: 400px;
+    margin: 0px auto;
+    padding: 30px 0px;
+}
+
+h1 {
+    font-size: 30px;
+    color: rgba(0, 180, 180, 1);
+}
+
+
+/******   作品集Project單元格式   ******/
+
+.ProjectUnitWhite {
+    width: 400px;
+    color: rgb(60, 60, 60);
+    text-align: left;
+    background-color: white;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.05), 0 0 1px 0px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+figure {
+    border: 1px solid rgba(0, 0, 255, 1);
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+
+img {
+    border: 1px solid rgba(255, 0, 0, 1);
+    width: 100%;
+    margin: 0px;
+}
+
+.ProjectText:last-child {
+    padding: 15px 20px 20px 20px;
+}
+
+.ProjectTitle {
+    font-size: 1em;
+    line-height: 1;
+    font-weight: 700;
+    color: rgb(60, 60, 60);
+    display: block;
+    padding: 10px 0px 10px 0px;
+}
+
+.ProjectSubtitle {
+    font-size: 0.8em;
+    line-height: 1em;
+    font-weight: 100;
+    color: rgb(60, 60, 60);
+    display: block;
+    padding: 10px 0px 10px 0px;
+}
+
+.ProjectDescription {
+    font-size: 0.8em;
+    line-height: 1.6;
+    display: block;
+    padding: 10px 0px 0px 0px;
+}
