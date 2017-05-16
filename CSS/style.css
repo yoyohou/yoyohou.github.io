@@ -600,8 +600,15 @@ article[class^="PostIt"]>figure.ZoomToCenter>img:hover {
     /*margin-left: 1em;*/
 }
 
+
+/******   FB PostIt相關   ******/
+
 #FacebookPostIt {
     overflow: hidden;
+}
+
+.fb-follow {
+    margin: 0 auto;
 }
 
 
