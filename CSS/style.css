@@ -508,6 +508,17 @@ article[class^="ProjectUnit"]>figure.ZoomToCenter>img:hover {
     text-overflow: ellipsis;
 }
 
+.ProjectAccolade {
+    font-size: 0.9em;
+    line-height: 1em;
+    font-weight: 700;
+    color: rgb(180, 180, 180);
+    display: block;
+    padding: 0px 0px 10px 0px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 .ProjectDescription {
     font-size: 0.9em;
     line-height: 1.6;
